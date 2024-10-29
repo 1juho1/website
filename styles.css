@@ -1,0 +1,176 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000; /* Black background */
+    color: #f4f4f9; /* Light gray text for contrast */
+    font-family: 'Roboto', sans-serif; /* Updated to a more modern font */
+}
+
+/* Navigation */
+header {
+    background: #fff; /* White header */
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end; /* Aligns the nav items to the right */
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end; /* Aligns the list items to the right */
+    list-style-type: none;
+    padding: 1rem;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #333; /* Dark text color for links */
+    text-decoration: none;
+    font-size: 1.3rem; /* Increased font size for navigation links */
+}
+
+/* Hero Section */
+#home {
+    text-align: center;
+    padding: 6rem 2rem; /* Increased padding for more space */
+    background: url('your-background-image.jpg') no-repeat center center; /* Use the correct image path */
+    background-size: cover; /* This will scale the image to cover the entire section */
+    color: white; /* Text color for contrast */
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 3rem; /* Increased padding for hero content */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 2rem; /* Increased font size for hero content */
+}
+
+/* Projects Section */
+#projects {
+    padding: 3rem; /* Increased padding */
+    text-align: center;
+    font-size: 1.5rem; /* Increased font size for project section */
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjusted to allow larger project cards */
+    gap: 1rem;
+}
+
+.project {
+    padding: 1.5rem; /* Increased padding */
+    background: #222; /* Dark background for project cards */
+    border: 1px solid #444; /* Darker border */
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); /* Light shadow effect on hover */
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project h3 {
+    margin-top: 1rem;
+}
+
+/* Profile Picture Section */
+#profile-picture {
+    text-align: center; /* Center the image */
+    padding: 2rem;
+}
+
+.profile-img {
+    width: 300px; /* Adjust width as needed for a larger size */
+    height: 300px; /* Set height to the same value for a square */
+    border: 2px solid blue;; /* Optional: Adds a white border around the image */
+    object-fit: cover; /* Ensures the image covers the dimensions without distortion */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensures the margin works properly */
+    border-radius: 0; /* Ensures the image remains square, remove this line for circular */
+}
+
+/* About Me Section */
+#about-me {
+    padding: 2rem; /* Add padding around the section */
+    text-align: center; /* Center align the text */
+    background-color: #111; /* Dark background for contrast */
+    color: #f4f4f9; /* Light text color */
+}
+
+#about-me h2 {
+    font-family: 'Orbitron', sans-serif; /* Futuristic font for the header */
+    font-size: 2.5rem; /* Bigger font size for the header */
+    margin-bottom: 1rem; /* Space below the header */
+}
+
+.about-content {
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the content */
+    line-height: 1.6; /* Improve line spacing */
+}
+
+.about-content p {
+    margin-bottom: 1.5rem; /* Space between paragraphs */
+    font-size: 1.2rem; /* Larger font size for paragraphs */
+}
+
+/* Additional styling for responsive design */
+@media (max-width: 600px) {
+    #about-me h2 {
+        font-size: 2rem; /* Adjust header size for smaller screens */
+    }
+
+    .about-content p {
+        font-size: 1rem; /* Adjust paragraph size for smaller screens */
+    }
+}
+
+
+/* Experience Section */
+#experience {
+    padding: 3rem; /* Increased padding */
+    text-align: center;
+    font-family: 'Times New Roman', serif; /* Set font to Times New Roman */
+    font-size: 1.5rem; /* Increased font size for experience section */
+}
+
+.job {
+    margin-bottom: 2.5rem; /* Space between job entries */
+    text-align: left; /* Align text to the left for better readability */
+}
+
+.job h3 {
+    margin: 0.5rem 0; /* Add spacing for the job title */
+    font-size: 1.8rem; /* Increased font size for job title */
+}
+
+.job p {
+    margin: 0.2rem 0; /* Add spacing for the job description */
+}
+
+.job ul {
+    margin-top: 0.5rem; /* Add space above the list of responsibilities */
+}
+
+/* Contact Section */
+#contact {
+    padding: 3rem; /* Increased padding */
+    text-align: center;
+    font-size: 1.5rem; /* Increased font size for contact section */
+}
