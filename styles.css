@@ -13,7 +13,7 @@ body {
 
 /* Navigation */
 header {
-    background: #fff; /* White header */
+    background: #0000FF; /* White header */
 }
 
 header nav {
@@ -33,7 +33,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #333; /* Dark text color for links */
+    color: #FFFFFF; /* Dark text color for links */
     text-decoration: none;
     font-size: 1.3rem; /* Increased font size for navigation links */
 }
