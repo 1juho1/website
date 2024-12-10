@@ -38,22 +38,41 @@ header nav ul li a {
     font-size: 1.3rem; /* Increased font size for navigation links */
 }
 
+/* Hero and Profile Picture Section */
+#hero-and-profile {
+    background: url('your-banner-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
 /* Hero Section */
 #home {
     text-align: center;
-    padding: 6rem 2rem; /* Increased padding for more space */
-    background: url('your-banner-image.jpg') no-repeat center center; /* Use the correct image path */
-    background-size: cover; /* This will scale the image to cover the entire section */
-    color: white; /* Text color for contrast */
+    padding: 3rem 2rem;
 }
 
 .hero-content {
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 3rem; /* Increased padding for hero content */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 2rem; /* Increased font size for hero content */
+    padding: 2rem; /* Slightly reduced padding */
+    border-radius: 10px;
+    font-size: 1.8rem; /* Adjusted font size for better fit */
 }
 
+/* Profile Picture Section */
+#profile-picture-section {
+    text-align: center; /* Center the content */
+    padding: 2rem;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border: 2px solid blue;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0; /* Keep the image square */
+}
 /* Projects Section */
 #projects {
     padding: 3rem; /* Increased padding */
@@ -88,23 +107,6 @@ header nav ul li a {
 .project h3 {
     margin-top: 1rem;
 }
-
-/* Profile Picture Section */
-#profile-picture {
-    text-align: center; /* Center the image */
-    padding: 2rem;
-}
-
-.profile-img {
-    width: 300px; /* Adjust width as needed for a larger size */
-    height: 300px; /* Set height to the same value for a square */
-    border: 2px solid blue;; /* Optional: Adds a white border around the image */
-    object-fit: cover; /* Ensures the image covers the dimensions without distortion */
-    margin: 0 auto; /* Center the image */
-    display: block; /* Ensures the margin works properly */
-    border-radius: 0; /* Ensures the image remains square, remove this line for circular */
-}
-
 /* About Me Section */
 #about-me {
     padding: 2rem; /* Add padding around the section */
