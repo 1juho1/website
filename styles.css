@@ -42,7 +42,7 @@ header nav ul li a {
 #home {
     text-align: center;
     padding: 6rem 2rem; /* Increased padding for more space */
-    background: url('your-banner-image.jpg') no-repeat center center; /* Use the correct image path */
+    background: url('your-bnner-image.jpg') no-repeat center center; /* Use the correct image path */
     background-size: cover; /* This will scale the image to cover the entire section */
     color: white; /* Text color for contrast */
 }
