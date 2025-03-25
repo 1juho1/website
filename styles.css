@@ -6,26 +6,28 @@
 }
 
 body {
-    background: #000; /* Black background */
-    color: #f4f4f9; /* Light gray text for contrast */
-    font-family: 'Roboto', sans-serif; /* Updated to a more modern font */
+    background: #000;
+    color: #f4f4f9;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Navigation */
 header {
-    background: #301934; /* Purple header */
+    background: #301934;
+    padding: 1rem;
 }
 
 header nav {
     display: flex;
-    justify-content: flex-end; /* Aligns the nav items to the right */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 header nav ul {
     display: flex;
-    justify-content: flex-end; /* Aligns the list items to the right */
-    list-style-type: none;
-    padding: 1rem;
+    list-style: none;
+    padding: 0;
 }
 
 header nav ul li {
@@ -33,9 +35,25 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #FFFFFF; /* Dark text color for links */
+    color: #FFFFFF;
     text-decoration: none;
-    font-size: 1.3rem; /* Increased font size for navigation links */
+    font-size: 1.3rem;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    header nav ul {
+        flex-direction: column;
+    }
+    
+    header nav ul li {
+        margin: 0.5rem 0;
+    }
 }
 
 /* Hero and Profile Picture Section */
@@ -43,60 +61,63 @@ header nav ul li a {
     background: url('your-banner-image.jpg') no-repeat center center;
     background-size: cover;
     color: white;
-}
-
-/* Hero Section */
-#home {
     text-align: center;
-    padding: 3rem 2rem;
+    padding: 3rem 1rem;
 }
 
 .hero-content {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 2rem; /* Slightly reduced padding */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
     border-radius: 10px;
-    font-size: 1.8rem; /* Adjusted font size for better fit */
+    font-size: 1.8rem;
 }
 
 /* Profile Picture Section */
 #profile-picture-section {
-    text-align: center; /* Center the content */
+    text-align: center;
     padding: 2rem;
 }
 
 .profile-img {
-    width: 300px;
-    height: 300px;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
     border: 2px solid blue;
     object-fit: cover;
-    margin: 0 auto;
-    display: block;
-    border-radius: 0; /* Keep the image square */
+    border-radius: 10px;
 }
+
+/* Responsive Image */
+@media (max-width: 600px) {
+    .profile-img {
+        width: 90%;
+    }
+}
+
 /* Projects Section */
 #projects {
-    padding: 3rem; /* Increased padding */
+    padding: 3rem 1rem;
     text-align: center;
-    font-size: 1.5rem; /* Increased font size for project section */
+    font-size: 1.2rem;
 }
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjusted to allow larger project cards */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1rem;
 }
 
 .project {
-    padding: 1.5rem; /* Increased padding */
-    background: #222; /* Dark background for project cards */
-    border: 1px solid #444; /* Darker border */
+    padding: 1.5rem;
+    background: #222;
+    border: 1px solid #444;
     border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project:hover {
-    transform: translateY(-5px); /* Lift effect */
-    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); /* Light shadow effect on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
 }
 
 .project img {
@@ -104,75 +125,46 @@ header nav ul li a {
     border-radius: 8px;
 }
 
-.project h3 {
-    margin-top: 1rem;
-}
 /* About Me Section */
 #about-me {
-    padding: 2rem; /* Add padding around the section */
-    text-align: center; /* Center align the text */
-    background-color: #111; /* Dark background for contrast */
-    color: #f4f4f9; /* Light text color */
-}
-
-#about-me h2 {
-    font-family: 'Orbitron', sans-serif; /* Futuristic font for the header */
-    font-size: 2.5rem; /* Bigger font size for the header */
-    margin-bottom: 1rem; /* Space below the header */
+    padding: 2rem;
+    text-align: center;
+    background-color: #111;
 }
 
 .about-content {
-    max-width: 800px; /* Limit width for better readability */
-    margin: 0 auto; /* Center the content */
-    line-height: 1.6; /* Improve line spacing */
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
-.about-content p {
-    margin-bottom: 1.5rem; /* Space between paragraphs */
-    font-size: 1.2rem; /* Larger font size for paragraphs */
-}
-
-/* Additional styling for responsive design */
+/* Responsive Text */
 @media (max-width: 600px) {
-    #about-me h2 {
-        font-size: 2rem; /* Adjust header size for smaller screens */
-    }
-
     .about-content p {
-        font-size: 1rem; /* Adjust paragraph size for smaller screens */
+        font-size: 1rem;
     }
 }
-
 
 /* Experience Section */
 #experience {
-    padding: 3rem; /* Increased padding */
+    padding: 3rem 1rem;
     text-align: center;
-    font-family: 'Times New Roman', serif; /* Set font to Times New Roman */
-    font-size: 1.5rem; /* Increased font size for experience section */
+    font-family: 'Times New Roman', serif;
+    font-size: 1.3rem;
 }
 
 .job {
-    margin-bottom: 2.5rem; /* Space between job entries */
-    text-align: left; /* Align text to the left for better readability */
+    margin-bottom: 2.5rem;
+    text-align: left;
 }
 
 .job h3 {
-    margin: 0.5rem 0; /* Add spacing for the job title */
-    font-size: 1.8rem; /* Increased font size for job title */
-}
-
-.job p {
-    margin: 0.2rem 0; /* Add spacing for the job description */
-}
-
-.job ul {
-    margin-top: 0.5rem; /* Add space above the list of responsibilities */
+    font-size: 1.6rem;
 }
 
 /* Contact Section */
 #contact {
-    padding: 3rem; /* Increased padding */
+    padding: 3rem 1rem;
     text-align: center;
-    font-size: 1.5rem; /* Increased font size for contact section */
+    font-size: 1.3rem;
 }
